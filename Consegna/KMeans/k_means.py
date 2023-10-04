@@ -31,7 +31,8 @@ class KMeans:
         X = np.array(X)
         temp = []
 
-        centroids = np.random.uniform(np.amin(X,axis=0),np.amax(X,axis=0),size=(self.k, X.shape[1]))
+       # centroids = np.random.uniform(np.amin(X,axis=0),np.amax(X,axis=0),size=(self.k, X.shape[1]))
+        centroids = np.random.random_sample((self.k,X.shape[1]))
         """
         for i in range(self.k):
             max_dist  = 0.0
